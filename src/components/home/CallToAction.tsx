@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Phone, Images } from "lucide-react";
+import { assetPath } from "@/lib/assetPath";
 
 export default function CallToAction() {
   return (
     <section className="relative bg-[#1C2B1F] py-16 md:py-24 overflow-hidden">
       <div className="absolute inset-0 bg-cover bg-center opacity-10"
-        style={{ backgroundImage: "url('/images/cta-bg.jpg')" }} />
+        style={{ backgroundImage: `url('${assetPath('/images/Screenshot%202026-05-22%20220332.png')}')` }} />
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
         <div className="inline-flex items-center gap-2 text-[#D4A843] text-xs tracking-widest uppercase mb-4">

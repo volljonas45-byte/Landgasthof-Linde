@@ -1,3 +1,5 @@
+import { assetPath } from '@/lib/assetPath';
+
 const photos = [
   { src: "/images/Screenshot%202026-05-22%20220318.png", alt: "Hausgemachtes Gericht" },
   { src: "/images/4e5a46a8-a5ca-8f4b-1471-dbbf07cdf201.jpeg", alt: "Schnitzel mit Pilzrahmsoße" },
@@ -36,7 +38,7 @@ export default function Galerie() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={src}
+                src={assetPath(src)}
                 alt={alt}
                 className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"

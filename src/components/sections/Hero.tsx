@@ -1,4 +1,5 @@
 import LindeScript from './LindeScript';
+import { assetPath } from '@/lib/assetPath';
 
 export default function Hero() {
   return (
@@ -6,7 +7,7 @@ export default function Hero() {
       {/* Background photo */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
-        style={{ backgroundImage: "url('/images/Screenshot%202026-05-22%20220359.png')" }}
+        style={{ backgroundImage: `url('${assetPath('/images/Screenshot%202026-05-22%20220359.png')}')` }}
       />
       {/* Gradient vignette */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0C1810]/70 via-transparent to-[#0C1810]" />

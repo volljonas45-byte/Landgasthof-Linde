@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ChevronDown, Phone } from "lucide-react";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero.jpg')" }}
+        style={{ backgroundImage: `url('${assetPath('/images/Screenshot%202026-05-22%20220359.png')}')` }}
       />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />

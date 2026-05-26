@@ -1,3 +1,5 @@
+import { assetPath } from '@/lib/assetPath';
+
 export default function Kueche() {
   return (
     <section id="kueche" className="bg-[#F7F2EA]">
@@ -47,7 +49,7 @@ export default function Kueche() {
             <div className="aspect-[4/5] bg-[#E8E0D0] overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/ae8a28b5-b30f-cc31-27eb-8eb70b487350.jpeg"
+                src={assetPath("/images/ae8a28b5-b30f-cc31-27eb-8eb70b487350.jpeg")}
                 alt="Aus der Lindenküche"
                 className="w-full h-full object-cover"
               />
